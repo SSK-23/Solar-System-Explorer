@@ -21,7 +21,7 @@ Solar System Explorer is an interactive web application that allows users to exp
   - Uranus: Violet
   - Neptune: Green
 - Animation effects for planets and the sun.
-- 
+  
 ## Technologies Used
 - HTML
 - CSS

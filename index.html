@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode"> 
+    <div id="sidebar">
+        <h2>Planets</h2>
+        <div id="toggle-buttons">
+            <button id="light-mode">Light Mode</button>
+            <button id="dark-mode">Dark Mode</button>
+        </div>
+        <div class="planet-info mercury-info">
+            <span class="planet-name">Mercury:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #C0C0C0;">Silver</span>. Smallest planet, with a thin atmosphere and extreme temperature variations.</span>
+        </div>
+        <div class="planet-info venus-info">
+            <span class="planet-name">Venus:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #FFC0CB;">Pink</span>. Similar in size to Earth but has a toxic atmosphere and surface temperatures hot enough to melt lead.</span>
+        </div>
+        <div class="planet-info earth-info">
+            <span class="planet-name">Earth:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #0000FF;">Blue</span>. The only known planet to support life, with diverse ecosystems and 70% of its surface covered by water.</span>
+        </div>
+        <div class="planet-info mars-info">
+            <span class="planet-name">Mars:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #FF4500;">Red</span>. Known as the Red Planet, it has the largest volcano (Olympus Mons) and evidence of past water.</span>
+        </div>
+        <div class="planet-info jupiter-info">
+            <span class="planet-name">Jupiter:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #FFA500;">Orange</span>. The largest planet, a gas giant known for its Great Red Spot, a massive storm that has lasted for centuries.</span>
+        </div>
+        <div class="planet-info saturn-info">
+            <span class="planet-name">Saturn:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #FFD700;">Gold</span>. Famous for its stunning rings, Saturn is a gas giant with a unique appearance and many moons.</span>
+        </div>
+        <div class="planet-info uranus-info">
+            <span class="planet-name">Uranus:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #EE82EE;">Violet</span>. An ice giant with a unique tilted axis, it has a faint ring system and is mostly made of hydrogen and helium.</span>
+        </div>
+        <div class="planet-info neptune-info">
+            <span class="planet-name">Neptune:</span>
+            <span class="planet-description">Color: <span class="planet-color" style="color: #008000;">Green</span>. The farthest planet from the Sun, Neptune has the fastest winds in the Solar System and is known for its vibrant storms.</span>
+        </div>
+        <div class="planet-info sun-info">
+            <span class="planet-name">Sun:</span>
+            <span class="planet-description">The Sun is a star at the center of our Solar System. It provides light and heat that sustain life on Earth. Its surface is extremely hot, and it emits a wide spectrum of radiation.</span>
+        </div>
+    </div>
+
+    <div id="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury" data-name="Mercury" data-description="Mercury is the smallest planet and closest to the Sun. It has a thin atmosphere that cannot hold heat, leading to extreme temperature variations. Its surface is covered with craters, resembling the Moon."></div>
+        </div>
+        <div class="orbit venus-orbit">
+            <div class="planet venus" data-name="Venus" data-description="Venus is similar in size to Earth but has a thick, toxic atmosphere filled with carbon dioxide and clouds of sulfuric acid. It is the hottest planet in the Solar System."></div>
+        </div>
+        <div class="orbit earth-orbit">
+            <div class="planet earth" data-name="Earth" data-description="Earth is the only planet known to support life. It has a diverse range of ecosystems and a protective atmosphere that keeps temperatures moderate. About 70% of its surface is covered by water."></div>
+        </div>
+        <div class="orbit mars-orbit">
+            <div class="planet mars" data-name="Mars" data-description="Mars is known as the Red Planet due to iron oxide on its surface. It has the largest volcano (Olympus Mons) and canyon (Valles Marineris) in the Solar System and signs of ancient water flows."></div>
+        </div>
+        <div class="orbit jupiter-orbit">
+            <div class="planet jupiter" data-name="Jupiter" data-description="Jupiter is the largest planet in our Solar System. It is a gas giant with a thick atmosphere and is known for its Great Red Spot, a giant storm that has been raging for centuries."></div>
+        </div>
+        <div class="orbit saturn-orbit">
+            <div class="planet saturn" data-name="Saturn" data-description="Saturn is famous for its stunning rings made of ice and rock particles. It is the second-largest planet in the Solar System and has numerous moons, including Titan, which has a thick atmosphere."></div>
+        </div>
+        <div class="orbit uranus-orbit">
+            <div class="planet uranus" data-name="Uranus" data-description="Uranus is an ice giant with a distinct blue color due to methane in its atmosphere. It has a unique tilt that causes extreme seasons and a faint ring system."></div>
+        </div>
+        <div class="orbit neptune-orbit">
+            <div class="planet neptune" data-name="Neptune" data-description="Neptune is the farthest planet from the Sun and is known for its deep blue color and strong winds, the fastest in the Solar System. It has a dynamic atmosphere with storms and is also an ice giant."></div>
+        </div>
+    </div>
+
+    <div id="info-panel">
+        <h2 id="planet-name">Planet Name</h2>
+        <p id="planet-description">Information about the planet will appear here.</p>
+        <button id="close-panel">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

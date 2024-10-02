@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #000; 
+}
+
+.dark-mode {
+    background-color: #000;
+    color: white; 
+}
+
+#solar-system {
+    width: calc(100vw - 300px); 
+    height: 100vh;
+    position: relative;
+    margin-left: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    color: white;
+    overflow-y: auto;
+}
+
+.light-mode #sidebar {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000; 
+}
+
+#toggle-buttons {
+    margin-bottom: 20px; 
+}
+
+#sidebar h2 {
+    margin: 0 0 20px 0;
+}
+
+.planet-info {
+    margin: 10px 0;
+    transition: background 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.planet-info:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+#solar-system .orbit {
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    animation: pulse 1.5s infinite; 
+}
+
+.planet {
+    border-radius: 50%; 
+    position: absolute;
+    transition: transform 0.3s ease; 
+}
+
+.mercury {
+    width: 24px;
+    height: 24px;
+    background: #C0C0C0; 
+    animation: rotate 10s linear infinite;
+}
+
+.venus {
+    width: 32px;
+    height: 32px;
+    background: #FFC0CB; 
+    animation: rotate 15s linear infinite;
+}
+
+.earth {
+    width: 36px;
+    height: 36px;
+    background: #0000FF; 
+    animation: rotate 20s linear infinite;
+}
+
+.mars {
+    width: 30px;
+    height: 30px;
+    background: #FF4500; 
+    animation: rotate 25s linear infinite;
+}
+
+.jupiter {
+    width: 50px;
+    height: 50px;
+    background: #FFA500; 
+    animation: rotate 30s linear infinite;
+}
+
+.saturn {
+    width: 45px;
+    height: 45px;
+    background: #FFD700; 
+    animation: rotate 35s linear infinite;
+}
+
+.uranus {
+    width: 35px;
+    height: 35px;
+    background: #EE82EE; 
+    animation: rotate 40s linear infinite;
+}
+
+.neptune {
+    width: 30px;
+    height: 30px;
+    background: #008000; 
+    animation: rotate 45s linear infinite;
+}
+
+.mercury-orbit {
+    width: 150px;
+    height: 150px;
+    animation: orbit 10s linear infinite;
+}
+
+.venus-orbit {
+    width: 200px;
+    height: 200px;
+    animation: orbit 15s linear infinite;
+}
+
+.earth-orbit {
+    width: 250px;
+    height: 250px;
+    animation: orbit 20s linear infinite;
+}
+
+.mars-orbit {
+    width: 300px;
+    height: 300px;
+    animation: orbit 25s linear infinite;
+}
+
+.jupiter-orbit {
+    width: 400px;
+    height: 400px;
+    animation: orbit 30s linear infinite;
+}
+
+.saturn-orbit {
+    width: 450px;
+    height: 450px;
+    animation: orbit 35s linear infinite;
+}
+
+.uranus-orbit {
+    width: 500px;
+    height: 500px;
+    animation: orbit 40s linear infinite;
+}
+
+.neptune-orbit {
+    width: 550px;
+    height: 550px;
+    animation: orbit 45s linear infinite;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+#info-panel {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: none; 
+    z-index: 30;
+}
+
+.light-mode #info-panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+#info-panel h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
